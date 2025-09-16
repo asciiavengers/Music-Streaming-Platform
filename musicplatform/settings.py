@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-fn4s*-6fze&x0ti&!qt_8b2%eytsmwsxqdny6c)t^37v$fyif4
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['mysitename.render.com', '127.0.0.1']
+ALLOWED_HOSTS = ['https://music-streaming-platform-ggk8.onrender.com', 'www.music-streaming-platform-ggk8.onrender.com', '127.0.0.1']
 
 
 # Application definition
