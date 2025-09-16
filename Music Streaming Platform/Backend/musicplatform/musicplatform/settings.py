@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-fn4s*-6fze&x0ti&!qt_8b2%eytsmwsxqdny6c)t^37v$fyif4
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['https://music-streaming-platform-6d1e.onrender.com', '127.0.0.1']
+ALLOWED_HOSTS = ['https://music-streaming-platform-6d1e.onrender.com', 'www.music-streaming-platform-6d1e.onrender.com', '127.0.0.1']
 
 
 # Application definition
@@ -131,3 +131,4 @@ MEDIA_ROOT = os.path.join(BASE_DIR,'media')
 STATIC_URL = '/streaming/static/'
 
 STATICFILES_DIRS = [os.path.join(BASE_DIR,'streaming/static')]
+
