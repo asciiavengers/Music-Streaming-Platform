@@ -1,0 +1,27 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Music Platform</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    </head>
+    <body>
+        <nav>
+            <a href="{% url 'home' %}">Home</a>
+            {% if user.is_authenticated %}
+                <a href="{% url 'upload' %}">Upload Music</a>
+                <span>Hello,{{user.username}}</span>
+                <a href="{% url 'login' %}">Login</a>
+                <a href="{% url 'signup' %}">Sign Up</a>
+            {% endif %}
+        </nav>
+        <main>
+            {% block content %}{% endblock %}
+        </main>
+        <script src="{% static 'js/main.js' %}"></script>
+    </body>
+</html>
